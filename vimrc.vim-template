@@ -1,14 +1,15 @@
 call pathogen#infect()
-"syntax on
 syntax enable
 filetype plugin indent on
 
+" Tab settings
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set number
 set smartindent
 set expandtab
+
 set nocompatible
 set backspace=indent,eol,start
 set nobackup
@@ -19,31 +20,18 @@ set incsearch
 set hlsearch
 filetype plugin indent on
 
+" Solarized Settings
 colorscheme solarized
-"set background=light
-set background=dark
+set background=dark "light is other option
 
-nmap <F2> :tabprev<CR>
-nmap <F3> :tabnext<CR>
+set noswapfile  " removes annoying swap
+set autoread    " automatically reloads (i.e. on git pull)
 
-set noswapfile 
-set number " line numbers
-
-"##############################################################################                             
-"" Easier split navigation
-"##############################################################################"
-"" Use ctrl-[hjkl] to select the active split!
-nmap <silent> <c-i> :wincmd k<CR>
-nmap <silent> <c-m> :wincmd j<CR>
-nmap <silent> <c-j> :wincmd h<CR>
-nmap <silent> <c-l> :wincmd l<CR>
+set number      " line numbers
 
 " switch bewtween .c and .h
-"map ` :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
-
 map t :e %:p:s,.h$,.X123X,:s,.c$,.h,:s,.X123X$,.c,<CR>
 map <F3> :vs %:p:s,.h$,.X123X,:s,.c$,.h,:s,.X123X$,.c,<CR>
 
-set autoread " automatically reloads (i.e. on git pull)
-
+" easier than hitting <Esc>
 imap jj <Esc>
