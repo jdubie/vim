@@ -20,10 +20,6 @@ set incsearch
 set hlsearch
 filetype plugin indent on
 
-" Solarized Settings
-colorscheme solarized
-set background=dark "light is other option
-
 set noswapfile  " removes annoying swap
 set autoread    " automatically reloads (i.e. on git pull)
 
