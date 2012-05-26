@@ -30,4 +30,9 @@ map t :e %:p:s,.h$,.X123X,:s,.c$,.h,:s,.X123X$,.c,<CR>
 map <F3> :vs %:p:s,.h$,.X123X,:s,.c$,.h,:s,.X123X$,.c,<CR>
 
 " easier than hitting <Esc>
-imap jj <Esc>
+imap fj <Esc><Right>
+vmap fj <Esc><Right>
+
+" nice paren functionality
+imap ( ()<Left>
+imap [ []<Left>
