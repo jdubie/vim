@@ -34,5 +34,5 @@ imap fj <Esc><Right>
 vmap fj <Esc><Right>
 
 " nice paren functionality
-imap ( ()<Left>
-imap [ []<Left>
+"imap ( ()<Left> " actually, this is annoying
+"imap [ []<Left> " actually, this is annoying
