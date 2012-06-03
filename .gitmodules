@@ -1,3 +1,9 @@
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "bundle/handlebars"]
+	path = bundle/handlebars
+	url = git://github.com/nono/vim-handlebars.git
+[submodule "bundle/stylus"]
+	path = bundle/stylus
+	url = git://github.com/wavded/vim-stylus.git

@@ -12,7 +12,10 @@ set expandtab
 
 set nocompatible
 set backspace=indent,eol,start
-set nobackup
+
+set nobackup      " prevents file.txt.swp
+set nowritebackup " prevents file.txt~ on write
+
 set history=50
 set ruler
 set showcmd
