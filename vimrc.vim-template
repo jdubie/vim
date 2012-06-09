@@ -37,7 +37,7 @@ imap fj <Esc><Right>
 vmap fj <Esc><Right>
 
 " don't have to shift ;
-nmap ; ;
+nmap ; :
 
 
 " nice paren functionality
