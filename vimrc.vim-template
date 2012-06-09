@@ -36,6 +36,10 @@ map <F3> :vs %:p:s,.h$,.X123X,:s,.c$,.h,:s,.X123X$,.c,<CR>
 imap fj <Esc><Right>
 vmap fj <Esc><Right>
 
+" don't have to shift ;
+map : ;
+map ; ;
+
 " nice paren functionality
 "imap ( ()<Left> " actually, this is annoying
 "imap [ []<Left> " actually, this is annoying
