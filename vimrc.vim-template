@@ -49,3 +49,17 @@ set cursorline
 "hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 "hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 "nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+
+
+" use comma as <leader> key
+let mapleader=","                                                                                                   
+nmap , <Space>
+set winminwidth=0
+
+" Splits manipulation mappings
+nnoremap <leader>ma <C-w>400><C-w>400+^
+nnoremap <leader>mi <C-w>400<<C-w>400-
+nnoremap <leader>h <C-w>h<C-w>40>^
+nnoremap <leader>l <C-w>l<C-w>40>^
+nnoremap <leader>j <C-w>j<C-w>400+^
+nnoremap <leader>k <C-w>k<C-w>400+^
