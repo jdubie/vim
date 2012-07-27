@@ -11,7 +11,6 @@ set smartindent
 set expandtab
 
 set nocompatible
-set backspace=indent,eol,start
 
 set nobackup      " prevents file.txt.swp
 set nowritebackup " prevents file.txt~ on write
@@ -39,3 +38,8 @@ vmap fj <Esc><Right>
 " nice paren functionality
 "imap ( ()<Left> " actually, this is annoying
 "imap [ []<Left> " actually, this is annoying
+
+"spell check
+
+" disable folding
+set foldlevelstart=99
