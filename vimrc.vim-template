@@ -67,7 +67,16 @@ set winminwidth=0
 " Splits manipulation mappings
 nnoremap <leader>ma <C-w>400><C-w>400+^
 nnoremap <leader>mi <C-w>400<<C-w>400-
-nnoremap <leader>h <C-w>h<C-w>40>^
-nnoremap <leader>l <C-w>l<C-w>40>^
 nnoremap <leader>j <C-w>j<C-w>400+^
 nnoremap <leader>k <C-w>k<C-w>400+^
+
+" Splits resize - don't really use this
+nnoremap <leader>H <C-w>h<C-w>40>^
+nnoremap <leader>L <C-w>l<C-w>40>^
+
+" window navigation
+nmap <silent> <leader>h :wincmd h<CR>
+nmap <silent> <leader>l :wincmd l<CR>
+
+" update current working directory
+autocmd BufEnter * silent! lcd %:p:h
