@@ -70,9 +70,13 @@ nnoremap <leader>mi <C-w>400<<C-w>400-
 nnoremap <leader>j <C-w>j<C-w>400+^
 nnoremap <leader>k <C-w>k<C-w>400+^
 
-" Splits resize - don't really use this
+" Splits resize
 nnoremap <leader>H <C-w>h<C-w>40>^
 nnoremap <leader>L <C-w>l<C-w>40>^
+
+" Vertical split normalize
+nnoremap <leader>m :resize -10<CR>
+
 
 " window navigation
 nmap <silent> <leader>h :wincmd h<CR>
